@@ -4,6 +4,7 @@
         <table class="table table-responsive">
         <button type="submit" class="btn btn-primary"><h1>Categories</h1></button><br><br>
 
+
       @foreach($cats as $cat)
     <form method="post" action="{{route('edit',$cat->id)}}" >
         <input type="hidden" name="_token" value="{{ csrf_token()}}">

@@ -30,7 +30,7 @@
                 <li class="active"> <a style="color:red;">{{Auth::User()->name}} </a>  </li>
                     
                     <li class="active"> <a href="/categories">Home </a>  </li>
-                     <li> <a href="/contact">Contact Us</a> </li>
+                     <li> <a href="/contact2">Contact Us</a> </li>
                       <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                      Logout</a>
 
@@ -63,9 +63,10 @@
                 Copyright &copy; 2019  By:<span ><b>Essam Tayh</b></span> 
             </div>
         </div>
-
+            <script src="{{asset('js/jquery.min.js')}}"></script>
              <script src="{{asset('js/bootstrap.min.js')}}"></script> 
 <script src="{{asset('js/jquery.flexslider.js')}}"></script>
+
 
       
 </html>

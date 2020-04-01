@@ -2,12 +2,12 @@
 @section('container')
 <div class="contain">
 <table class="table table-responsive">
-    <tr><th>id</th><th>name</th></tr>
+    <tr><th><button  class="btn btn-primary">id</button></th><th><button  class="btn btn-primary">name</button></th></tr>
     @foreach($supp as $supplier)
         <form method="post" action="{{route('edit_sup',$supplier->id)}}">
             <input type="hidden" name="_token" value="{{csrf_token()}}">
             <tr>
-                <td>{{$supplier->id}}</td><td><input name="name" value="{{$supplier->sup_name}}" ></td>
+                <td><button type="submit" class="btn btn-success">{{$supplier->id}}</button></td><td><input name="name" value="{{$supplier->sup_name}}" ></td>
             
          @foreach($admin as $adm)
               @if(Auth::user()->id==$adm->id)

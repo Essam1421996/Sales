@@ -11,18 +11,7 @@ use App\Categories;
 class categoryController extends Controller
 {
     //
-    public function showCat($cat_id){
-
-        $cats=Categories::all();
-        $prods=array();
-        $cat=Categories::find($cat_id);
-        if($cat!=null)
-        {
-            $prods=$cat->products();
-        }
-        return view('searchCat',compact('$cats','$prods'));
-
-    }
+   
 
     public function showAllCat(){
 

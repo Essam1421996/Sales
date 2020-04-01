@@ -33,7 +33,6 @@ class supplierController extends Controller
         $supp->sup_name=$name;
         $supp->save();
         $supp->products()->attach([$supp->id,$id]);
-      //  $supp->products()->detach($supp->id);
         return back();
     }
     public function editSup($id,Request $request)
