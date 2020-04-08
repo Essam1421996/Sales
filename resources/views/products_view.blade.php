@@ -1,9 +1,11 @@
 @extends('master2')
 @section('container')
-<table class="table table-responsive">
+@if($prods->count()>=1)
+<table class="table table-responsive col-lg-12">
     <tr><th><button  class="btn btn-primary">id</button></th><th><button type="submit" class="btn btn-primary">name
     </button></th><th><button type="submit" class="btn btn-primary">image</button></th><th><button type="submit" class="btn btn-primary">price</button></th>
     <th><button type="submit" class="btn btn-primary">quantity</button></th></tr>
+	@endif
     @foreach($prods as $prod)
         <form method="post" action="{{route('editProd',$prod->id)}}">
             <input type="hidden" name="_token" value=" {{ csrf_token()}}">

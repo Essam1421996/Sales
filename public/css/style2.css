@@ -336,14 +336,13 @@ a:focus {
 	color: #2ABB9B;
 }
 .footer_bottom {
-        height:20%;
+        height:130px;
 	background: rgba(9,9,9,0.8);
         color: #fff;
         text-align:center;
-         margin-top:300px;       
           }
 .copyright{
-        text-align:center;
+		padding:4%;
          
          }
 

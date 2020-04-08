@@ -57,8 +57,8 @@
         
 @yield('container')
 
-<div class="footer_bottom">
-                       <br><br><br>
+<div class="footer_bottom col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                       
 <div class="copyright">
                 Copyright &copy; 2019  By:<span ><b>Essam Tayh</b></span> 
             </div>
